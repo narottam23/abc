@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #37474f;
+  border-color: #37474f;
+  height: 64px;
+}
+
+.navbar h1 {
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+}
+.navbar .icons {
+  color: white;
+  display: flex;
+  gap: 42px;
+  font-size: 24px;
+  padding: 18px;
+  margin-right: 37px;
+}
