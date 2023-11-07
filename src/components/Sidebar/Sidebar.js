@@ -9,10 +9,10 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
 import "./Sidebar.css";
-import Navbar from "../Navbar/Navbar";
+
 const routes = [
   {
-    path: "/dashboard/home",
+    path: "/",
     name: "Home",
     icon: <FaHome />,
   },
@@ -565,7 +565,6 @@ const SideBar = ({ children }) => {
 
   return (
     <>
-      <Navbar />
       <div className="main-container">
         <motion.div
           animate={{

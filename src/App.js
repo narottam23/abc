@@ -1,8 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
+
 import Sidebar from "./components/Sidebar/Sidebar";
-import Servicehome from "./pages/Servicehome";
+
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Services from "./pages/serviceHome/Services/Services";
 
 function App() {
   return (
@@ -11,12 +13,18 @@ function App() {
         <Router>
           <Sidebar>
             <Routes>
-              <Route path="/dashboard/home" element={<Dashboard />} />
-              <Route path="/dashboard/services" element={<Servicehome />} />
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/dashboard/services" element={<Services />} />
             </Routes>
           </Sidebar>
         </Router>
       </div>
+      {/*<BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard/services" element={<Servicehome />} />
+        </Routes>
+      </BrowserRouter>*/}
     </>
   );
 }
